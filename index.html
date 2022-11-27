@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Typin Speed</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="game">
+        <div class="name">Typing Speed Test Game</div>
+        <div class="container">
+            <div class="message">
+                You Are playing on 
+                [ <span class="lvl"></span> ] level & you have  [ <span class="seconds"></span> ] Seconds to type the word
+            </div>
+            <div class="start-box">
+                <div class="start">start playing</div>
+                <select name="Levels" class="levels" >
+                    <option selected disabled>choose level</option>
+                    <option value="Easy">easy</option>
+                    <option value="Normal">normal</option>
+                    <option value="Hard">hard</option>
+                </select>
+            </div>
+            <div class="the-word"></div>
+            <input type="text" class="input" placeholder="Enter the word">
+            <div class="upcoming-words">
+            </div>
+            <div class="control">
+                <div class="time">time left: <span></span> seconds</div>
+                <div class="score">score: <div class="got"> 0 </div> from <span class="total"></span></div>
+            </div> 
+            <div class="finish"></div>
+        </div>
+    </div>
+</body>
+</html>

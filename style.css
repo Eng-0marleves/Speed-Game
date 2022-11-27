@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* ======================================== 
+Global Section Start
+======================================== */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Helvetica Neue", Helvetica;
+    border: none; outline: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+body {
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+:root {
+    --main-color: crimson;
+}
+/* ========================================
+Global Section End
+======================================== */
+
+
+/* ======================================== 
+Main Section Start
+======================================== */
+.game {
+    width: 100%;
+}
+.game .name {
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2em;
+    background: #333;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+.game .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+.game .container .message {
+    width: 70%;
+    text-align: center;
+    font-size: 21px;
+    color: var(--main-color);
+    background: #111;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.game .container .message span {
+    color: var(--main-color);
+}
+.game .container .start-box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.game .container .start-box .levels {
+    color: #fff;
+    background: var(--main-color);
+    height: fit-content;
+    width: 15%;
+}
+.game .container .start-box .levels option {
+    color: #fff;
+    background: #111;
+}
+.game .container .start-box .start {
+    width: 80%;
+    text-align: center;
+    font-size: 21px;
+    background: var(--main-color);
+    color: #fff;
+    border: 5px solid var(--main-color);
+    cursor: pointer;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    margin-bottom: 20px;
+}
+.game .container .start:hover {
+    color: var(--main-color);
+    background: #fff;
+}
+.game .container .the-word {
+    color: var(--main-color);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.game .container .input {
+    width: 70%;
+    text-align: center;
+    font-size: 21px;
+    color: #000;    
+    border: 5px solid var(--main-color);
+    padding: 5px;
+    margin-bottom: 20px;    
+    text-transform: none;
+}
+.game .container .input:focus::placeholder {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.game .container .upcoming-words {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 21px;
+    background: #111;
+    margin-bottom: 20px;
+}
+.game .container .upcoming-words::-webkit-scrollbar {
+    height: 10px;
+}
+.game .container .upcoming-words::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+.game .container .upcoming-words div {
+    margin: 5px 10px;
+    background: var(--main-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+.game .container .control {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    background: var(--main-color);
+    padding: 10px;
+}
+.game .container .control .score {
+    display: flex;
+}
+.game .container .control div {
+    margin: 0 5px;
+}
+.game .container .control span {
+    margin-left: 5px;
+}
+/* ========================================
+Main Section End
+======================================== */ 
